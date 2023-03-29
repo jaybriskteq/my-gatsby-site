@@ -11,13 +11,15 @@ module.exports = {
     "gatsby-transformer-remark",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "pages",
-        path: "./src/pages/",
+        path: "./content/blog/",
       },
       __key: "pages",
     },
+    "gatsby-transformer-remark",
   ],
 };
