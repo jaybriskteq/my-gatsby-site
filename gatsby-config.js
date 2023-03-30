@@ -8,10 +8,8 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-netlify-cms",
-    "gatsby-transformer-remark",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -20,6 +18,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: `my-gatsby-site/images/uploads/`,
+      },
+      __key: "pages",
+    },
     "gatsby-transformer-remark",
+    "gatsby-transformer-sharp",
+
   ],
 };
