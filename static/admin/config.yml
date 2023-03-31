@@ -5,7 +5,8 @@ backend:
 
 local_backend: true
 
-media_folder: "images/uploads"
+media_folder: "content/images/thumbs"
+
 
 collections:
   - name: "blog"
@@ -18,4 +19,4 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Body", name: "body", widget: "string"}
-      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Images", name: "thumb", widget: "image"}
