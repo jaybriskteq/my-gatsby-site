@@ -52,5 +52,5 @@ Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
 
 start local netlify
 use 
-localbackend: true in yml file 
+localbackend: true in yml file ,
  npx netlify-cms-proxy-server run cmd 
